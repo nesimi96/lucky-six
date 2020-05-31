@@ -1,0 +1,52 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin input-style {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+    box-sizing: border-box;
+   
+    &:focus {
+        outline: none;
+    }
+}
+
+@mixin statistic-holder-style {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+    
+    &:hover {
+        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    }
+}
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@mixin boxes-style {
+    min-width: 250px;
+    width: 30%;
+    height: 75vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 900px) {
+        width: 100%;
+     }
+
+     @media screen and (max-width: 600px) {
+        height: max-content;
+        padding-bottom: 20px;
+       }
+}

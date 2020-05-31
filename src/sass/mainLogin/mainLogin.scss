@@ -1,0 +1,68 @@
+.MainLogin {
+    width: 120px;
+    height: 65%;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    align-items: center;
+
+    &:hover {
+        border: 1px solid rgb(199, 194, 194);
+    }
+
+    &-text {
+
+        & p {
+            line-height: 0;
+            color: #fff;
+            margin-right: 20px;
+            transform: translateY(-1.5px);
+        }
+    }
+    
+}
+
+.MainLogout {
+    position: relative;
+    width: max-content;
+    height: 65%;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        border: 1px solid rgb(199, 194, 194);
+    }
+
+
+    &-logout-box {
+        position: absolute;
+        left: 0;
+        bottom: -120%;
+        background-color: rgb(255, 255, 255);
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgb(180, 175, 175);
+        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.48);
+
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            box-shadow: 0 1px 6px 0 rgba(32,33,36,0.88);
+        }
+
+        & p {
+            font-size: 11px;
+            color: rgb(63, 62, 62);
+            font-weight: 600;
+            margin-left: 15%;
+        }
+    }
+}

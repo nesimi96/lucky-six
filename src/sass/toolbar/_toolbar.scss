@@ -1,0 +1,41 @@
+.Toolbar {
+    position: relative;
+    background-color: rgb(4, 35, 65);
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+
+    & button {
+        padding: 15px 20px;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &-hamburger-holder {
+        margin-left: 10px;
+        width: 60px;
+        height: 100%;
+
+        @media screen and (max-width: 450px) {
+            margin-left: 5px;
+          }
+    }
+
+    &-user-area {
+        position: absolute;
+       // background-color: rgb(184, 174, 174);
+        right: 20px;
+        height: 100%;
+        width: max-content;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 450px) {
+            right: 9px;
+          }
+    }
+}

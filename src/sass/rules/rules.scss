@@ -1,0 +1,28 @@
+.Rules {
+    //background-color: red;
+    height: max-content;
+    width: 100%;
+    text-align: start;
+    box-sizing: border-box;
+
+    padding: 10px 30px 10px 30px;
+
+    & h6 {
+     line-height: 1;
+     font-size: 20px;
+    }
+
+    & p {
+        line-height: 1.3;
+        font-weight: 500;
+        font-size: 15px;
+        color: rgb(53, 52, 52);
+        transform: translateY(-35px);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+
+    & span {
+        color: black;
+        font-weight: 600;
+    } 
+}

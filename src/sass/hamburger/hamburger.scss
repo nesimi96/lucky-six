@@ -1,0 +1,27 @@
+.Hamburger {
+    //background-color: rgb(128, 85, 85);
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    @include flex-center;
+
+    &-item {
+        background-color: #ffffff;
+        height: 2px;
+        width: 30px;
+
+      &::before,
+      &::after {
+          display: block;
+          content: "";
+          background-color: #ffffff;
+          height: 2px;
+          width: 30px;
+      }
+
+      &::before { transform: translateY(7px); }
+
+      &::after { transform: translateY(-9px); }
+    }
+    
+}

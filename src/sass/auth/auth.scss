@@ -1,0 +1,62 @@
+
+.Login-Register {
+    //background-color: red;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+    height: 100%;
+    width: 100%;
+
+    &-text {
+        //background-color: red;
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+
+        & p {
+            font-size: 13px;
+        }
+
+        &-1 {
+            color: rgb(31, 30, 30);
+            margin-right: 3px;
+        }
+
+        &-2 {
+            font-weight: 600;
+            cursor: pointer;
+            margin-left: 3px;
+        }
+    }
+
+    & button {
+        border: none;
+        cursor: pointer;
+        padding: 10px 25px;
+        background-color: rgb(36, 35, 35);
+        color: #fff;
+        border-radius: 3px;
+        margin-top: 15px;
+
+        &:hover {
+            background-color: rgb(48, 47, 47);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    & input {
+        margin: 7px 0;
+        height: 25px;
+        padding-left: 5px;
+        border: 1px solid rgb(134, 134, 134);
+
+        &:focus {
+           outline: none;
+           border: 1.3px solid rgb(114, 114, 114);
+        }
+    }
+}
